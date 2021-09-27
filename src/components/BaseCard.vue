@@ -11,12 +11,7 @@
       {{ type }}
     </li>
   </ul>
-  <img
-    class="current-pokemon"
-    v-if="url"
-    src="../assets/1.gif"
-    alt="current-pokemon"
-  />
+  <img class="current-pokemon" v-if="url" :src="url" alt="current-pokemon" />
 </template>
 
 <script>
