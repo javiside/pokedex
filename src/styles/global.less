@@ -1,0 +1,366 @@
+// Small devices
+.sm (@rules) {
+  @media (min-width: 576px) {
+    @rules();
+  }
+}
+
+// Medium devices
+.md (@rules) {
+  @media (min-width: 768px) {
+    @rules();
+  }
+}
+
+// Large devices
+.lg (@rules) {
+  @media (min-width: 992px) {
+    @rules();
+  }
+}
+
+// Extra large devices
+.xl (@rules) {
+  @media (min-width: 1200px) {
+    @rules();
+  }
+}
+
+//########################################
+// Main screen top-left position (details)
+//########################################
+.main-screen-xs () {
+  background-color: rgba(255, 0, 0, 0.548);
+  left: 47px;
+  top: 66px;
+  height: 49px;
+  width: 97px;
+  transform: rotate(3deg);
+  word-wrap: unset;
+}
+
+.main-screen-sm () {
+  background-color: rgba(255, 0, 0, 0.548);
+  left: 82px;
+  top: 110px;
+  height: 88px;
+  width: 166px;
+}
+
+.main-screen-md () {
+  background-color: rgba(255, 0, 0, 0.548);
+  left: 102px;
+  top: 140px;
+  height: 105px;
+  width: 204px;
+}
+
+.main-screen-lg () {
+  background-color: rgba(255, 0, 0, 0.548);
+  left: 129px;
+  top: 179px;
+  height: 131px;
+  width: 261px;
+}
+
+.main-screen-xl () {
+  background-color: rgba(255, 0, 0, 0.548);
+  left: 164px;
+  top: 222px;
+  height: 168px;
+  width: 329px;
+}
+
+//########################################
+/// Secondary screen top-right position (list)
+//########################################
+.list-screen-xs () {
+  right: 40px;
+  top: 53px;
+  transform: rotate(-12deg);
+  width: 93px;
+  font-size: 4px;
+  letter-spacing: 2px;
+  padding-left: 3px;
+}
+
+.list-screen-sm () {
+  right: 60px;
+  top: 90px;
+  font-size: 9px;
+  letter-spacing: 4px;
+  width: 170px;
+  padding-left: 7px;
+}
+
+.list-screen-md () {
+  right: 74px;
+  top: 111px;
+  font-size: 12px;
+  width: 214px;
+  padding-left: 22px;
+}
+
+.list-screen-lg () {
+  right: 96px;
+  top: 142px;
+  font-size: 16px;
+  letter-spacing: 6px;
+  width: 277px;
+  padding-left: 30px;
+}
+
+.list-screen-xl () {
+  right: 130px;
+  top: 182px;
+  font-size: 20px;
+  width: 330px;
+  padding-left: 36px;
+}
+
+//########################################
+/// Pagination screen bottom position (pagination)
+//########################################
+.pgn-screen-xs () {
+  transform: rotate(3deg);
+  font-size: 10px;
+  left: 55px;
+  bottom: 38px;
+  width: 54px;
+
+  .pag-btns {
+    left: 59px;
+    width: 44px;
+    bottom: 10px;
+    height: 14px;
+  }
+}
+
+.pgn-screen-sm () {
+  left: 90px;
+  bottom: 65px;
+  font-size: 18px;
+  letter-spacing: 6px;
+  width: 94px;
+
+  .pag-btns {
+    left: 105px;
+    width: 76px;
+    bottom: 17px;
+    height: 25px;
+  }
+}
+
+.pgn-screen-md () {
+  left: 115px;
+  bottom: 78px;
+  font-size: 26px;
+  width: 118px;
+
+  .pag-btns {
+    left: 130px;
+    width: 95px;
+    bottom: 26px;
+    height: 30px;
+  }
+}
+
+.pgn-screen-lg () {
+  left: 144px;
+  bottom: 96px;
+  font-size: 38px;
+  width: 148px;
+
+  .pag-btns {
+    left: 165px;
+    width: 120px;
+    bottom: 36px;
+    height: 38px;
+  }
+}
+
+.pgn-screen-xl () {
+  left: 177px;
+  bottom: 120px;
+  font-size: 50px;
+  width: 200px;
+
+  .pag-btns {
+    left: 216px;
+    width: 150px;
+    bottom: 49px;
+    height: 45px;
+  }
+}
+
+//########################################
+// Pikachu
+//########################################
+.pika-md () {
+  display: block;
+  mix-blend-mode: overlay;
+  top: 24px;
+  left: 88px;
+  height: 36px;
+}
+
+.pika-lg () {
+  top: 30px;
+  left: 112px;
+  height: 45px;
+}
+
+.pika-xl () {
+  top: 38px;
+  left: 139px;
+  height: 60px;
+}
+
+//########################################
+// Background
+//########################################
+.bg-md () {
+  display: block;
+  mix-blend-mode: overlay;
+  transform: rotate(2.5deg) scaleX(1.2);
+  top: 142px;
+  left: 114px;
+  height: 101px;
+}
+
+.bg-lg () {
+  top: 180px;
+  left: 145px;
+  height: 127px;
+}
+
+.bg-xl () {
+  top: 228px;
+  left: 185px;
+  height: 161px;
+}
+
+//########################################
+// Current Pokemon
+//########################################
+.poke-xs () {
+  filter: opacity(0.7);
+  transform: rotate(2.5deg) scaleX(1.2);
+  top: 65px;
+  left: 65px;
+  height: 57px;
+  font-size: 10px;
+}
+
+.poke-sm () {
+  top: 115px;
+  left: 114px;
+  height: 91px;
+  font-size: 16px;
+}
+
+.poke-md () {
+  top: 142px;
+  left: 146px;
+  height: 101px;
+}
+
+.poke-lg () {
+  top: 180px;
+  left: 187px;
+  height: 127px;
+  font-size: 20px;
+}
+
+.poke-xl () {
+  top: 228px;
+  left: 228px;
+  height: 161px;
+  font-size: 26px;
+}
+
+//########################################
+// Current Name
+//########################################
+.name-xs () {
+  transform: rotate(-9deg);
+  right: 71px;
+  bottom: 11px;
+  height: 29px;
+  width: 80px;
+  letter-spacing: 1px;
+  font-size: 4px;
+}
+
+.name-sm () {
+  right: 151px;
+  bottom: 44px;
+  height: 29px;
+  width: 80px;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.name-md () {
+  right: 187px;
+  bottom: 56px;
+  height: 34px;
+  width: 104px;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.name-lg () {
+  right: 231px;
+  bottom: 77px;
+  height: 38px;
+  width: 138px;
+  font-size: unset;
+  letter-spacing: unset;
+}
+
+.name-xl () {
+  right: 305px;
+  bottom: 95px;
+  height: 46px;
+  width: 156px;
+}
+
+//########################################
+// Types
+//########################################
+.type-xs () {
+  transform: rotate(-9deg);
+  height: 20px;
+  width: 51px;
+  right: 28px;
+  bottom: 22px;
+}
+
+.type-sm () {
+  right: 55px;
+  bottom: 48px;
+  height: 29px;
+  width: 80px;
+}
+
+.type-md () {
+  right: 66px;
+  bottom: 66px;
+  height: 34px;
+  width: 104px;
+}
+
+.type-lg () {
+  right: 83px;
+  bottom: 89px;
+  height: 38px;
+  width: 138px;
+}
+
+.type-xl () {
+  right: 112px;
+  bottom: 119px;
+  height: 46px;
+  width: 156px;
+}
