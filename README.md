@@ -3,8 +3,8 @@
 ### _Development alpha_
 
 See the deployed (heroku) version here: [https://vue-pokedex-js.herokuapp.com](https://vue-pokedex-js.herokuapp.com)
-![pokeDash](https://github.com/javiside/pokedex/blob/main/src/assets/img.png)
-![pokeDash2](https://github.com/javiside/pokedex/blob/main/src/assets/img2.png)
+![pokeDash](https://github.com/javiside/pokedex/raw/main/src/assets/img.jpg)
+![pokeDash2](https://github.com/javiside/pokedex/raw/main/src/assets/img.jpg)
 
 1. Initial commit;
 
