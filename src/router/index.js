@@ -21,4 +21,13 @@ const router = createRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  const id = to?.params?.pokemonId;
+  if (!id || (id > 0 && id <= 150)) {
+    next();
+  } else {
+    next("/");
+  }
+});
+
 export default router;

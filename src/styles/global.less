@@ -75,38 +75,38 @@
 /// Secondary screen top-right position (list)
 //########################################
 .list-screen-xs () {
-  right: 40px;
-  top: 53px;
+  right: 38px;
+  top: 52px;
   transform: rotate(-12deg);
-  width: 93px;
+  width: 90px;
   font-size: 4px;
   letter-spacing: 2px;
   padding-left: 3px;
 }
 
 .list-screen-sm () {
-  right: 60px;
+  right: 70px;
   top: 90px;
   font-size: 9px;
   letter-spacing: 4px;
-  width: 170px;
+  width: 160px;
   padding-left: 7px;
 }
 
 .list-screen-md () {
-  right: 74px;
-  top: 111px;
+  right: 82px;
+  top: 112px;
   font-size: 12px;
-  width: 214px;
+  width: 205px;
   padding-left: 22px;
 }
 
 .list-screen-lg () {
-  right: 96px;
+  right: 100px;
   top: 142px;
   font-size: 16px;
   letter-spacing: 6px;
-  width: 277px;
+  width: 272px;
   padding-left: 30px;
 }
 
@@ -196,9 +196,23 @@
 //########################################
 // Pikachu
 //########################################
-.pika-md () {
+.pika-xs () {
   display: block;
   mix-blend-mode: overlay;
+  top: 11px;
+  left: 41px;
+  height: 18px;
+}
+
+.pika-sm () {
+  display: block;
+  top: 19px;
+  left: 69px;
+  height: 32px;
+}
+
+.pika-md () {
+  display: block;
   top: 24px;
   left: 88px;
   height: 36px;
@@ -219,25 +233,37 @@
 //########################################
 // Background
 //########################################
-.bg-md () {
+.bg-xs () {
   display: block;
   mix-blend-mode: overlay;
-  transform: rotate(2.5deg) scaleX(1.2);
-  top: 142px;
-  left: 114px;
-  height: 101px;
+  transform: rotate(2.7deg) scaleX(1.1);
+  top: 65px;
+  left: 51px;
+  height: 50px;
+}
+
+.bg-sm () {
+  top: 111px;
+  left: 87px;
+  height: 87px;
+}
+
+.bg-md () {
+  top: 139px;
+  left: 110px;
+  height: 107px;
 }
 
 .bg-lg () {
-  top: 180px;
-  left: 145px;
-  height: 127px;
+  top: 176px;
+  left: 139px;
+  height: 136px;
 }
 
 .bg-xl () {
-  top: 228px;
-  left: 185px;
-  height: 161px;
+  top: 223px;
+  left: 175px;
+  height: 172px;
 }
 
 //########################################
@@ -245,37 +271,37 @@
 //########################################
 .poke-xs () {
   filter: opacity(0.7);
-  transform: rotate(2.5deg) scaleX(1.2);
-  top: 65px;
-  left: 65px;
-  height: 57px;
+  transform: rotate(2.5deg) scaleX(-1);
+  top: 69px;
+  left: 69px;
+  height: 42px;
   font-size: 10px;
 }
 
 .poke-sm () {
-  top: 115px;
-  left: 114px;
-  height: 91px;
+  top: 118px;
+  left: 118px;
+  height: 72px;
   font-size: 16px;
 }
 
 .poke-md () {
-  top: 142px;
-  left: 146px;
-  height: 101px;
+  top: 148px;
+  left: 148px;
+  height: 90px;
 }
 
 .poke-lg () {
-  top: 180px;
-  left: 187px;
-  height: 127px;
+  top: 188px;
+  left: 188px;
+  height: 110px;
   font-size: 20px;
 }
 
 .poke-xl () {
-  top: 228px;
-  left: 228px;
-  height: 161px;
+  top: 235px;
+  left: 235px;
+  height: 145px;
   font-size: 26px;
 }
 
@@ -363,4 +389,15 @@
   bottom: 119px;
   height: 46px;
   width: 156px;
+}
+
+@keyframes glow {
+  from {
+    background-color: rgba(red, 0.5);
+    outline: 0 solid rgba(white, 0.2);
+  }
+  to {
+    background-color: rgba(red, 1);
+    outline: 4px solid rgba(white, 0.7);
+  }
 }

@@ -9,10 +9,11 @@
       <img
         v-if="!currentId"
         class="screen-bg"
-        src="../assets/1.gif"
+        src="../assets/bg.gif"
         alt="background"
       />
       <router-view />
+      <span v-if="!currentId" class="no-poke-msg">{{ "Click Above" }}</span>
       <div class="pagination">
         <span>{{ page }}</span
         ><span>/</span><span>{{ maxPage }}</span>
@@ -34,7 +35,7 @@
           v-for="pokemon in currentPokemons"
           :key="pokemon.url"
           :pokemon="pokemon"
-          :avatarUrl="avatars?.[pokemon.id]"
+          :avatarUrl="getAvatarUrl(pokemon.id)"
         />
       </ul>
     </div>
@@ -94,6 +95,9 @@ export default {
         });
       }
     },
+    getAvatarUrl(id) {
+      return this.avatars?.[id];
+    },
   },
 };
 </script>
@@ -123,6 +127,27 @@ export default {
     width: 1200px;
   });
 
+  .no-poke-msg {
+    position: absolute;
+    .name-xs ();
+
+    .sm({
+      .name-sm ();
+    });
+
+    .md({
+      .name-md ();
+    });
+
+    .lg({
+      .name-lg ();
+    });
+
+    .xl({
+      .name-xl ();
+    });
+  }
+
   .pagination {
     position: absolute;
     display: flex;
@@ -140,7 +165,7 @@ export default {
         border-radius: 8px;
         cursor: pointer;
         overflow: hidden;
-        animation: glow 1s infinite alternate;
+        animation: glow 0.5s infinite alternate;
 
         &:hover {
           animation: none;
@@ -183,15 +208,6 @@ export default {
       .pgn-screen-xl ();
     });
   }
-
-  @keyframes glow {
-    from {
-      background-color: rgba(white, 1);
-    }
-    to {
-      background-color: rgba(red, 1);
-    }
-  }
 }
 .pokemon-list {
   position: absolute;
@@ -216,7 +232,11 @@ export default {
 }
 .pikachu {
   position: absolute;
-  display: none;
+  .pika-xs ();
+
+  .sm({
+    .pika-sm();
+  });
 
   .md({
     .pika-md ();
@@ -233,7 +253,11 @@ export default {
 
 .screen-bg {
   position: absolute;
-  display: none;
+  .bg-xs ();
+
+  .sm({
+    .bg-sm();
+  });
 
   .md({
     .bg-md ();

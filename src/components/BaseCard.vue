@@ -22,7 +22,8 @@ export default {
       return this.$store.getters.pokemonNames;
     },
     url() {
-      return this.$store.getters.avatars[this.info.id];
+      return require(`../assets/pokemon/${this.info.id}.gif`);
+      // return this.$store.getters.avatars[this.info.id];
     },
     typeColor() {
       return {
@@ -55,6 +56,7 @@ export default {
 .current-pokemon,
 .id {
   position: absolute;
+
   .poke-xs ();
 
   .sm({
@@ -72,6 +74,10 @@ export default {
   .xl({
     .poke-xl ();
   });
+}
+
+.id {
+  transform: rotate(2.5deg) translate(-10px);
 }
 
 .name {

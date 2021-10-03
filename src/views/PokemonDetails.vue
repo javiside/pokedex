@@ -44,7 +44,7 @@ export default {
       this.fetchInfo(id);
     },
   },
-  async created() {
+  created() {
     this.fetchInfo(this.$route.params.pokemonId);
   },
 };
